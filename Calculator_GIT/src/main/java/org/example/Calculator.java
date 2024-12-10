@@ -15,4 +15,12 @@ public class Calculator {
         return a*b;
     }
 
+    public double division(double a, double b) throws DivideByZeroException{
+        if(b==0){
+            throw new DivideByZeroException();
+        }
+        return a/b;
+
+    }
+
 }
